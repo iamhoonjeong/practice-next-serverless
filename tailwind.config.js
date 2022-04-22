@@ -9,5 +9,7 @@ module.exports = {
   theme: {
     extend: {},
   },
+  darkMode: 'media', // 컴퓨터 설정을 따라 dark mode setting
+  // darkMode: 'class', // 클래스 네임에 'dark'가 있는지에 따라 setting
   plugins: [],
 };
