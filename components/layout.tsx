@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { cls } from '../libs/utils';
+import { cls } from '../libs/client/utils';
 
 interface LayoutProps {
   title?: string;
@@ -9,7 +9,12 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function Layout({ title, canGoBack, hasTabBar, children }: LayoutProps) {
+export default function Layout({
+  title,
+  canGoBack,
+  hasTabBar,
+  children,
+}: LayoutProps) {
   const router = useRouter();
   const onClick = () => {
     router.back();
